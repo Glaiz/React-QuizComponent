@@ -12,9 +12,8 @@ class QuizQuestionButton extends Component {
         )
     }
 
-    handleClick()
-    {
-
+    handleClick() {
+        this.props.clickHandler(this.props.button_text)
     }
 }
 
