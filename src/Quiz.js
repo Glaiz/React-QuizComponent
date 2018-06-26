@@ -19,13 +19,16 @@ class Quiz extends Component {
         const isQuizEnd = this.state.quiz_position - 1 === quizData.quiz_questions.length;
 
         if (!isQuizEnd) {
-            return (<QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}/>);
+            return (<QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]} showNextQuestionHandler={this.showNextQuestion.bind(this)} />);
         } else {
             return (<QuizEnd></QuizEnd>);
         }
 
 
     }
+
+    showNextQuestion() {}
+
 }
 
 export default Quiz;
