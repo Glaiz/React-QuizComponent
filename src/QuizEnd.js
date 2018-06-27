@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
 
 class QuizEnd extends Component {
@@ -9,15 +9,14 @@ class QuizEnd extends Component {
             <div>
                 <p>Thanks for playing!</p>
                 <a href='' onClick={this.handleResetClick.bind(this)}>Reset Quiz</a>
-                
+
             </div>
         )
 
     }
 
-    handleResetClick()
-    {
-
+    handleResetClick() {
+        this.props.resetClickHandler();
     }
 }
 
