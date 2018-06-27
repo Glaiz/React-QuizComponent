@@ -21,7 +21,7 @@ class Quiz extends Component {
         if (!isQuizEnd) {
             return (<QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]} showNextQuestionHandler={this.showNextQuestion.bind(this)} />);
         } else {
-            return (<QuizEnd resetClickHandler={this.handleResetClick(this.handleResetClick.bind(this))} />);
+            return (<QuizEnd resetClickHandler={this.handleResetClick.bind(this)} />);
         }
 
 
